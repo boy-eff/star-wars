@@ -1,0 +1,16 @@
+
+a {
+    width: 100%;
+    background-color: gray;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+a:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition-duration: 1.2s;
+}

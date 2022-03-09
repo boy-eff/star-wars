@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ItemDetailComponent } from './items/item-detail/item-detail.component';
-import { ItemListComponent } from './items/item-list/item-list.component';
+import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { PeopleDetailsComponent } from './people/people-details/people-details.component';
+import { PeopleListComponent } from './people/people-list/people-list.component';
 
 const routes: Routes = [
-  {path: 'item-list', component: ItemListComponent},
-  {path: 'item-detail', component: ItemDetailComponent}
+  {path: 'home', component: HomeComponent},
+  {path: 'people', component: PeopleListComponent},
+  {path: 'people/:name', component: PeopleDetailsComponent},
+  {path: '**', redirectTo:'home'}
 ];
 
 @NgModule({
